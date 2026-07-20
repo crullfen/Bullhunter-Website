@@ -1,17 +1,14 @@
-# BullHunter Premium Onepager V5 — Command Center
+# BullHunter Premium Onepager V6 — Character Core
 
-This version converts the Hunter Market and Hunter Ecosystem into the approved futuristic command-center style.
+Changes in this version:
 
-Highlights:
-- Large illustrated Bull, Hunter and Bear panels
-- Green / purple / red visual coding
-- Full Hunter Market explanation and five-step creation process
-- Central BullHunter ecosystem core
-- Six connected ecosystem nodes
-- Animated energy streams flowing into the core
-- Full `$HUNTER` ticker
-- Command-center panels, clipped corners and neon borders
-- Mobile fallback that turns the network into stacked cards
+- `BULLHUNTER` and `LEGION` now use the same brushed-aluminium treatment
+- Bull / Hunter / Bear icons replaced by large illustrated character panels
+- Hunter uses the approved Brand Bible image: matte black armor, narrow green visor, dark purple cape, no horns
+- All six ecosystem energy paths now terminate at the BullHunter core
+- Central AI core enhanced with pulsing energy and rotating holographic orbits
+- Full `$HUNTER` ticker retained
+- Responsive stacked layout on mobile
 
 Upload and replace:
 - index.html
@@ -20,4 +17,4 @@ Upload and replace:
 - README.md
 - assets/
 
-Vercel will redeploy automatically.
+Vercel redeploys automatically.

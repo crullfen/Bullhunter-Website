@@ -156,6 +156,7 @@
     </section>
 
 
+
     <section class="market-section command-market" id="hunter-market">
       <div class="market-backdrop" aria-hidden="true"></div>
       <div class="market-content">
@@ -164,23 +165,39 @@
           <h2 class="brand-heading">The Hunter Market</h2>
         </div>
 
-        <div class="market-command-grid reveal">
-          <article class="market-command-card bull-command">
-            <div class="command-visual">
-              <svg viewBox="0 0 260 210" aria-hidden="true">
+        <div class="character-market-grid reveal">
+          <article class="character-card bull-character">
+            <div class="character-stage">
+              <svg class="bull-illustration" viewBox="0 0 500 560" aria-hidden="true">
                 <defs>
-                  <radialGradient id="bullBody" cx="50%" cy="42%">
-                    <stop offset="0" stop-color="#aaff6d"/>
-                    <stop offset=".55" stop-color="#58ff00"/>
-                    <stop offset="1" stop-color="#153f00"/>
+                  <radialGradient id="bullAura" cx="50%" cy="35%">
+                    <stop offset="0" stop-color="#caff8f" stop-opacity=".95"/>
+                    <stop offset=".45" stop-color="#69ff0f" stop-opacity=".72"/>
+                    <stop offset="1" stop-color="#122900" stop-opacity="0"/>
                   </radialGradient>
+                  <linearGradient id="bullArmor" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#1d2b14"/>
+                    <stop offset=".45" stop-color="#080c07"/>
+                    <stop offset="1" stop-color="#263d14"/>
+                  </linearGradient>
+                  <linearGradient id="bullHorn" x1="0" x2="1">
+                    <stop offset="0" stop-color="#89ff35"/>
+                    <stop offset=".5" stop-color="#d7ffb2"/>
+                    <stop offset="1" stop-color="#4cc900"/>
+                  </linearGradient>
                 </defs>
-                <path d="M31 67c17-30 42-43 70-45-4 18-15 34-30 47 15-8 34-12 59-12s44 4 59 12c-15-13-26-29-30-47 28 2 53 15 70 45-13 5-27 4-39-1 9 14 14 31 14 49 0 40-33 68-74 68s-74-28-74-68c0-18 5-35 14-49-12 5-26 6-39 1Z" fill="url(#bullBody)"/>
-                <path d="M92 128c19-10 57-10 76 0-7 23-20 34-38 34s-31-11-38-34Z" fill="#0c1907"/>
-                <circle cx="102" cy="106" r="5" fill="#061000"/><circle cx="158" cy="106" r="5" fill="#061000"/>
+                <ellipse cx="250" cy="260" rx="210" ry="230" fill="url(#bullAura)"/>
+                <path d="M158 166C105 109 65 88 26 92c23 50 58 87 111 110" fill="none" stroke="url(#bullHorn)" stroke-width="28" stroke-linecap="round"/>
+                <path d="M342 166c53-57 93-78 132-74-23 50-58 87-111 110" fill="none" stroke="url(#bullHorn)" stroke-width="28" stroke-linecap="round"/>
+                <path d="M140 158c29-49 72-75 110-75s81 26 110 75l34 92-31 112-63 66H200l-63-66-31-112 34-92Z" fill="url(#bullArmor)" stroke="#7dff19" stroke-width="8"/>
+                <path d="M170 218 250 187l80 31-16 51-64-15-64 15-16-51Z" fill="#7dff19" filter="drop-shadow(0 0 18px #7dff19)"/>
+                <path d="M183 287h134l-20 80-47 37-47-37-20-80Z" fill="#050805" stroke="#3e6d23" stroke-width="5"/>
+                <path d="M143 385 61 475h378l-82-90-57-25H200l-57 25Z" fill="url(#bullArmor)" stroke="#4bb900" stroke-width="6"/>
+                <path d="M216 323h68l-8 30h-52l-8-30Z" fill="#7dff19"/>
               </svg>
+              <div class="character-particles"></div>
             </div>
-            <div class="command-copy">
+            <div class="character-copy">
               <span class="market-number">01</span>
               <h3>Bull</h3>
               <b>Opportunity</b>
@@ -188,16 +205,12 @@
             </div>
           </article>
 
-          <article class="market-command-card hunter-command">
-            <div class="command-visual hunter-command-visual">
-              <div class="tower-beam"></div>
-              <svg viewBox="0 0 260 210" aria-hidden="true">
-                <path d="M130 18 79 39 61 94l22 78h94l22-78-18-55-51-21Z" fill="#111018" stroke="#9b35ff" stroke-width="4"/>
-                <path d="m89 83 41-15 41 15-12 18-29-9-29 9-12-18Z" fill="#79ff18"/>
-                <path d="M102 105h56l-8 48h-40l-8-48Z" fill="#08080b" stroke="#6430a8" stroke-width="3"/>
-              </svg>
+          <article class="character-card hunter-character">
+            <div class="character-stage hunter-stage">
+              <div class="hunter-character-image" role="img" aria-label="Official BullHunter in matte black armor, narrow neon-green visor and dark purple cape"></div>
+              <div class="hunter-character-beam" aria-hidden="true"></div>
             </div>
-            <div class="command-copy">
+            <div class="character-copy">
               <span class="market-number">02</span>
               <h3>Hunter</h3>
               <b>Narrative</b>
@@ -205,24 +218,33 @@
             </div>
           </article>
 
-          <article class="market-command-card bear-command">
-            <div class="command-visual">
-              <svg viewBox="0 0 260 210" aria-hidden="true">
+          <article class="character-card bear-character">
+            <div class="character-stage">
+              <svg class="bear-illustration" viewBox="0 0 500 560" aria-hidden="true">
                 <defs>
-                  <radialGradient id="bearBody" cx="50%" cy="42%">
-                    <stop offset="0" stop-color="#ff6676"/>
-                    <stop offset=".55" stop-color="#ff334d"/>
-                    <stop offset="1" stop-color="#4b0812"/>
+                  <radialGradient id="bearAura" cx="50%" cy="35%">
+                    <stop offset="0" stop-color="#ff7f8d" stop-opacity=".86"/>
+                    <stop offset=".42" stop-color="#ff4058" stop-opacity=".62"/>
+                    <stop offset="1" stop-color="#2d0309" stop-opacity="0"/>
                   </radialGradient>
+                  <linearGradient id="bearArmor" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#281117"/>
+                    <stop offset=".5" stop-color="#080608"/>
+                    <stop offset="1" stop-color="#3d111a"/>
+                  </linearGradient>
                 </defs>
-                <circle cx="78" cy="58" r="28" fill="url(#bearBody)"/>
-                <circle cx="182" cy="58" r="28" fill="url(#bearBody)"/>
-                <path d="M130 38c48 0 79 34 79 77 0 44-33 73-79 73s-79-29-79-73c0-43 31-77 79-77Z" fill="url(#bearBody)"/>
-                <path d="M96 133c18-11 50-11 68 0-4 22-17 33-34 33s-30-11-34-33Z" fill="#22050a"/>
-                <circle cx="101" cy="105" r="5" fill="#21040a"/><circle cx="159" cy="105" r="5" fill="#21040a"/>
+                <ellipse cx="250" cy="260" rx="210" ry="230" fill="url(#bearAura)"/>
+                <circle cx="148" cy="137" r="58" fill="url(#bearArmor)" stroke="#ff4058" stroke-width="7"/>
+                <circle cx="352" cy="137" r="58" fill="url(#bearArmor)" stroke="#ff4058" stroke-width="7"/>
+                <path d="M116 177c22-63 74-98 134-98s112 35 134 98l26 100-39 106-71 45H200l-71-45-39-106 26-100Z" fill="url(#bearArmor)" stroke="#ff4058" stroke-width="8"/>
+                <path d="M157 229 250 193l93 36-22 46-71-12-71 12-22-46Z" fill="#ff4058" filter="drop-shadow(0 0 18px #ff4058)"/>
+                <path d="M174 294h152l-18 76-58 38-58-38-18-76Z" fill="#070507" stroke="#76202e" stroke-width="5"/>
+                <path d="M139 390 54 478h392l-85-88-61-27H200l-61 27Z" fill="url(#bearArmor)" stroke="#b5273b" stroke-width="6"/>
+                <path d="M208 327h84l-11 31h-62l-11-31Z" fill="#ff4058"/>
               </svg>
+              <div class="character-particles"></div>
             </div>
-            <div class="command-copy">
+            <div class="character-copy">
               <span class="market-number">03</span>
               <h3>Bear</h3>
               <b>Fear</b>
@@ -253,7 +275,6 @@
       </div>
     </section>
 
-
     <section class="ecosystem-section command-ecosystem" id="ecosystem">
       <div class="section ecosystem-inner">
         <div class="command-title reveal">
@@ -266,29 +287,33 @@
             <defs>
               <linearGradient id="flowGreenPurple" x1="0" x2="1">
                 <stop offset="0" stop-color="#7dff19"/>
-                <stop offset=".56" stop-color="#7dff19"/>
+                <stop offset=".6" stop-color="#7dff19"/>
                 <stop offset="1" stop-color="#9b35ff"/>
               </linearGradient>
               <linearGradient id="flowPurpleRed" x1="0" x2="1">
-                <stop offset="0" stop-color="#9b35ff"/>
-                <stop offset="1" stop-color="#ff4058"/>
+                <stop offset="0" stop-color="#ff4058"/>
+                <stop offset=".46" stop-color="#ff4058"/>
+                <stop offset="1" stop-color="#9b35ff"/>
               </linearGradient>
               <filter id="strongGlow">
                 <feGaussianBlur stdDeviation="4" result="blur"/>
                 <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
               </filter>
             </defs>
-            <path class="flow-line green-line" d="M250 155 C410 175 460 270 600 380"/>
-            <path class="flow-line purple-line" d="M950 155 C790 175 740 270 600 380"/>
-            <path class="flow-line purple-line" d="M985 385 C820 385 760 385 600 385"/>
-            <path class="flow-line red-line" d="M930 630 C780 560 725 475 600 390"/>
-            <path class="flow-line green-line" d="M270 630 C420 560 475 475 600 390"/>
-            <path class="flow-line green-line" d="M215 385 C380 385 440 385 600 385"/>
-            <circle class="network-ring r1" cx="600" cy="385" r="130"/>
-            <circle class="network-ring r2" cx="600" cy="385" r="185"/>
+            <path class="flow-line green-line path-community" d="M295 145 C410 175 505 280 600 380"/>
+            <path class="flow-line green-line path-growth" d="M905 145 C790 175 695 280 600 380"/>
+            <path class="flow-line purple-line path-platform" d="M945 380 C805 380 705 380 600 380"/>
+            <path class="flow-line red-line path-token" d="M900 615 C785 560 690 465 600 380"/>
+            <path class="flow-line green-line path-wealth" d="M300 615 C415 560 510 465 600 380"/>
+            <path class="flow-line green-line path-reinvest" d="M255 380 C395 380 495 380 600 380"/>
+            <circle class="network-ring r1" cx="600" cy="380" r="130"/>
+            <circle class="network-ring r2" cx="600" cy="380" r="185"/>
           </svg>
 
           <div class="command-core">
+            <div class="core-orbit orbit-one"></div>
+            <div class="core-orbit orbit-two"></div>
+            <div class="core-energy"></div>
             <svg viewBox="0 0 64 64" aria-hidden="true">
               <path d="M15 14 5 6l4 17 10 7-4-16Zm34 0 10-8-4 17-10 7 4-16ZM20 21l12 8 12-8-4 25-8 10-8-10-4-25Z"/>
             </svg>

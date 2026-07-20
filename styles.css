@@ -1222,3 +1222,210 @@ section,
     min-height:auto;
   }
 }
+
+
+/* =========================================================
+   V6 — Character artwork and fully connected AI core
+   ========================================================= */
+
+/* Hero title: one consistent aluminium treatment */
+.hero-title .hero-title-line{
+  display:block;
+  background:
+    repeating-linear-gradient(0deg,rgba(255,255,255,.13) 0 1px,rgba(0,0,0,.08) 1px 3px),
+    linear-gradient(180deg,#fff 0%,#d6d6d6 18%,#f8f8f8 34%,#97979a 51%,#e8e8e8 69%,#858589 84%,#d4d4d5 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  color:transparent;
+  filter:drop-shadow(0 3px 0 rgba(0,0,0,.76)) drop-shadow(0 8px 13px rgba(0,0,0,.48));
+}
+.hero-title .hero-title-line + .hero-title-line{
+  margin-top:.07em;
+}
+
+/* Full image-style market characters */
+.character-market-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.character-card{
+  min-height:650px;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  background:
+    radial-gradient(circle at 50% 27%,rgba(255,255,255,.06),transparent 38%),
+    linear-gradient(180deg,rgba(11,8,16,.82),rgba(4,4,7,.97));
+  border:1px solid rgba(255,255,255,.12);
+  clip-path:polygon(0 0,94% 0,100% 6%,100% 100%,6% 100%,0 94%);
+}
+.bull-character{box-shadow:inset 0 -4px 0 rgba(125,255,25,.84)}
+.hunter-character{box-shadow:inset 0 -4px 0 rgba(155,53,255,.84)}
+.bear-character{box-shadow:inset 0 -4px 0 rgba(255,64,88,.84)}
+.character-stage{
+  position:relative;
+  height:455px;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+}
+.character-stage:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(180deg,transparent 52%,rgba(4,4,7,.84) 100%),
+    repeating-linear-gradient(90deg,transparent 0 42px,rgba(255,255,255,.018) 42px 43px);
+}
+.bull-character .character-stage{background:radial-gradient(circle at 50% 42%,rgba(125,255,25,.18),transparent 57%)}
+.hunter-character .character-stage{background:radial-gradient(circle at 50% 42%,rgba(155,53,255,.22),transparent 59%)}
+.bear-character .character-stage{background:radial-gradient(circle at 50% 42%,rgba(255,64,88,.18),transparent 57%)}
+.bull-illustration,.bear-illustration{
+  position:relative;
+  z-index:2;
+  width:94%;
+  max-height:445px;
+  filter:drop-shadow(0 20px 30px rgba(0,0,0,.62));
+}
+.hunter-stage{
+  isolation:isolate;
+}
+.hunter-character-image{
+  position:absolute;
+  z-index:2;
+  inset:0;
+  background:
+    linear-gradient(0deg,rgba(4,4,7,.86),transparent 30%),
+    url("assets/close.webp") center 22%/cover no-repeat;
+  filter:saturate(1.08) contrast(1.06) brightness(1.05);
+}
+.hunter-character-beam{
+  position:absolute;
+  z-index:3;
+  top:0;
+  left:50%;
+  width:5px;
+  height:180px;
+  transform:translateX(-50%);
+  background:linear-gradient(to top,var(--green),#e3ffd4 38%,var(--purple) 64%);
+  box-shadow:0 0 13px var(--green),0 0 27px var(--purple);
+  opacity:.8;
+}
+.character-particles{
+  position:absolute;
+  z-index:1;
+  inset:0;
+  opacity:.4;
+  background-image:
+    radial-gradient(circle at 20% 28%,currentColor 0 1px,transparent 2px),
+    radial-gradient(circle at 78% 35%,currentColor 0 1px,transparent 2px),
+    radial-gradient(circle at 64% 72%,currentColor 0 1px,transparent 2px),
+    radial-gradient(circle at 31% 68%,currentColor 0 1px,transparent 2px);
+  background-size:95px 91px,117px 109px,83px 101px,129px 87px;
+}
+.bull-character .character-particles{color:var(--green)}
+.bear-character .character-particles{color:#ff4058}
+.character-copy{
+  position:relative;
+  flex:1;
+  padding:25px 31px 36px;
+}
+.character-copy h3{
+  margin:0;
+  font-family:"Barlow Condensed";
+  font-size:51px;
+  text-transform:uppercase;
+  line-height:1;
+}
+.character-copy b{
+  display:block;
+  margin:9px 0 15px;
+  font-family:"Barlow Condensed";
+  font-size:17px;
+  text-transform:uppercase;
+  letter-spacing:.13em;
+}
+.bull-character .character-copy b{color:var(--green)}
+.hunter-character .character-copy b{color:#c76eff}
+.bear-character .character-copy b{color:#ff5266}
+.character-copy p{margin:0;color:#bbb4c1;line-height:1.65}
+
+/* Every ecosystem line reaches the center */
+.command-lines .flow-line{
+  stroke-width:4;
+  stroke-dasharray:13 14;
+  opacity:.98;
+}
+.path-community{animation-delay:0s}
+.path-growth{animation-delay:-.35s}
+.path-platform{animation-delay:-.7s}
+.path-token{animation-delay:-1.05s}
+.path-wealth{animation-delay:-1.4s}
+.path-reinvest{animation-delay:-1.75s}
+.command-core{
+  overflow:visible;
+  isolation:isolate;
+}
+.core-energy{
+  position:absolute;
+  z-index:-1;
+  left:50%;
+  top:50%;
+  width:210px;
+  height:210px;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  background:radial-gradient(circle,#fff 0 1%,var(--green) 7%,var(--purple) 27%,rgba(155,53,255,.12) 53%,transparent 72%);
+  animation:coreCharge 2.5s ease-in-out infinite;
+}
+.core-orbit{
+  position:absolute;
+  z-index:-1;
+  left:50%;
+  top:50%;
+  border:1px solid rgba(155,53,255,.48);
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+}
+.orbit-one{
+  width:325px;
+  height:325px;
+  border-style:dashed;
+  animation:orbitRotate 14s linear infinite;
+}
+.orbit-two{
+  width:390px;
+  height:390px;
+  border-color:rgba(125,255,25,.24);
+  animation:orbitRotateReverse 20s linear infinite;
+}
+@keyframes coreCharge{
+  0%,100%{transform:translate(-50%,-50%) scale(.88);opacity:.62}
+  50%{transform:translate(-50%,-50%) scale(1.12);opacity:1}
+}
+@keyframes orbitRotate{
+  from{transform:translate(-50%,-50%) rotate(0)}
+  to{transform:translate(-50%,-50%) rotate(360deg)}
+}
+@keyframes orbitRotateReverse{
+  from{transform:translate(-50%,-50%) rotate(360deg)}
+  to{transform:translate(-50%,-50%) rotate(0)}
+}
+
+@media(max-width:980px){
+  .character-market-grid{grid-template-columns:1fr}
+  .character-card{min-height:auto}
+  .character-stage{height:470px}
+  .hunter-character-image{background-position:center 18%}
+  .core-energy,.core-orbit{display:none}
+}
+@media(max-width:560px){
+  .character-stage{height:405px}
+  .character-copy h3{font-size:44px}
+}
+@media(prefers-reduced-motion:reduce){
+  .core-energy,.core-orbit{animation:none!important}
+}
