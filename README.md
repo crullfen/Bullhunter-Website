@@ -1,4 +1,4 @@
-# BullHunter Premium Onepager V1
+# BullHunter Premium Onepager V2 — Citadel Awakening
 
 This is a static one-page website for **bullhunter.xyz**.
 
@@ -37,3 +37,10 @@ Design is controlled by `styles.css`.
 Menu, reveal effects and the copy button are in `script.js`.
 
 No build command or package installation is required.
+
+
+## V2 changes
+- Integrated citadel charging animation: green energy climbs through the tower and becomes the purple Hunter Beam.
+- Removed the separate floating candle/beam overlay.
+- Seamless transition below the hero.
+- Brushed-aluminum texture on BULLHUNTER and metallic purple texture on LEGION.

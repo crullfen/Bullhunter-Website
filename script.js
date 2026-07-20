@@ -51,3 +51,9 @@ if (glow && matchMedia('(pointer:fine)').matches) {
     glow.style.opacity = '1';
   });
 }
+
+// Keep the first frame cinematic, then reveal the interface as the citadel awakens.
+document.documentElement.classList.add('intro-running');
+window.addEventListener('load', () => {
+  window.setTimeout(() => document.documentElement.classList.remove('intro-running'), 3150);
+});
