@@ -1,36 +1,39 @@
-# BullHunter Onepager — Premium V1
+# BullHunter Premium Onepager V1
 
-A static, mobile-first onepager for **bullhunter.xyz**. No build process is required.
+This is a static one-page website for **bullhunter.xyz**.
 
 ## Files to upload to GitHub
-Upload everything in this folder to the root of your repository:
+
+Upload the contents of this folder directly to the root of your existing GitHub repository:
 
 - `index.html`
 - `styles.css`
 - `script.js`
-- `assets/` (the entire folder)
-- `README.md`
+- `assets/`
 
-Do not upload only the ZIP file.
+Do not upload the outer ZIP file. Replace the existing files in your repository when GitHub asks.
 
-## Publish free with Vercel
-1. Create a new GitHub repository, for example `bullhunter-website`.
-2. Upload all files above and commit them.
-3. Sign in to Vercel with GitHub.
-4. Click **Add New → Project** and import the repository.
-5. Framework preset: **Other**. No build command is needed.
-6. Click **Deploy**.
+## Publish
 
-## Connect bullhunter.xyz
-In Vercel, open the project and go to **Settings → Domains**. Add:
+Your Vercel project is already connected to GitHub. After committing these files, Vercel should automatically deploy the updated site to:
 
-- `bullhunter.xyz`
-- `www.bullhunter.xyz`
+- https://bullhunter.xyz
+- https://www.bullhunter.xyz
 
-Vercel will display the DNS records to add at your domain registrar. Copy those exact records into the registrar's DNS settings.
+Check Vercel → Deployments and wait until the latest deployment says **Ready**.
 
-## Update links or text
-Open `index.html` in a text editor. Search for the current Telegram, X, DexScreener, Pump.fun links or contract address and replace them.
+## Links currently used
 
-## Images
-Images are optimized as WebP in the `assets` folder. Keep those filenames unless you also update the references in `styles.css`.
+- Telegram: https://t.me/BullHunterLegionHQ
+- X: https://x.com/chainblockzz
+- DexScreener: https://dexscreener.com/solana/GspGSekqnKEMXYyjar8TyDjDUiHeSwnSnaN4b4amxodz
+- Pump.fun: https://join.pump.fun/HSag/41mbgky4
+- Contract address: B1rSnF3yjB3AnF4q7krzZToA9dRLy8jhJdQoKE5Jpump
+
+## Editing later
+
+Most text and links are in `index.html`.
+Design is controlled by `styles.css`.
+Menu, reveal effects and the copy button are in `script.js`.
+
+No build command or package installation is required.
