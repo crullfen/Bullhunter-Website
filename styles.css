@@ -1664,3 +1664,36 @@ section,
     max-width:94% !important;
   }
 }
+
+/* =========================================================
+   V10 — Exact approved Hunter Market artwork
+   ========================================================= */
+
+.approved-market-visual{
+  margin:0 0 24px;
+  width:100%;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.12);
+  background:#050507;
+  box-shadow:
+    0 26px 70px rgba(0,0,0,.48),
+    0 0 42px rgba(155,53,255,.08);
+  clip-path:polygon(1% 0,99% 0,100% 3%,100% 97%,99% 100%,1% 100%,0 97%,0 3%);
+}
+.approved-market-visual img{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  object-position:center;
+}
+@media(max-width:720px){
+  .approved-market-visual{
+    overflow-x:auto;
+    clip-path:none;
+  }
+  .approved-market-visual img{
+    width:1180px;
+    max-width:none;
+  }
+}

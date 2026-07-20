@@ -1,13 +1,13 @@
-# BullHunter V9 — Correct Character Proportions
+# BullHunter V10 — Exact Hunter Market Visual
 
-This update replaces the Bull, Hunter and Bear background images with real `<img>` elements.
+This version replaces the previous Bull / Hunter / Bear character cards with the exact approved triptych artwork.
 
-Corrections:
-- Hunter is no longer stretched or widened
-- Bull and Bear also preserve their original proportions
-- All three images use `object-fit: contain`
-- Card sizes remain visually aligned on desktop and mobile
-- No character image is distorted to fill the panel
+Changes:
+- Uses the approved Bull, Hunter and Bear composition exactly as shown
+- Preserves the artwork proportions
+- Removes the older separate character cards from the page
+- Keeps the Hunter Market explanation and process sections below the artwork
+- Mobile users can horizontally scroll the visual so no part is distorted
 
 Upload and replace all files in the existing GitHub repository.
-Vercel will deploy the update automatically.
+Vercel will redeploy automatically.
