@@ -1,19 +1,20 @@
-# BullHunter Premium Onepager V3 — Hunter Ecosystem
+# BullHunter Premium Onepager V4 — Sunrise Network
 
-This version adds:
+Main changes:
 
-- A full explanation of the **Hunter Market** and how it is created
-- A more detailed explanation of the **Hunter Candle**
-- The slogan **One Legion · One Mission · One Future**
-- A visual overview of the future **self-sustaining Hunter Ecosystem**
-- A reinvestment loop explained in simple language
-- New branded hexagonal icons and miniature figures
-- Brushed-metal headings inspired by the supplied visual references
-- The existing Citadel Awakening animation: green energy charges through the citadel and transforms into the purple beam
+- Static sunrise hero using the approved citadel image
+- Removed the failed citadel loading animation and the separate extra candle
+- Consistent brushed-aluminium headline treatment across all major sections
+- Brighter imagery and lighter overlays
+- New illustrated Bull / Hunter / Bear cards
+- Full `$HUNTER` ticker in the ecosystem
+- Animated energy lines flowing from every ecosystem node into BullHunter at the center
+- Smoother section transitions with hard black seams removed
+- Existing mobile navigation, reveal effects and contract-copy button retained
 
-## Upload to GitHub
+## Upload
 
-Upload and replace these items in the root of your existing repository:
+Replace the following files in the root of the existing GitHub repository:
 
 - `index.html`
 - `styles.css`
@@ -21,8 +22,4 @@ Upload and replace these items in the root of your existing repository:
 - `README.md`
 - `assets/`
 
-Vercel will deploy the update automatically.
-
-## Important wording
-
-The site describes a self-sustaining ecosystem as the long-term model BullHunter is **working toward**, not as a guaranteed financial result.
+Vercel will redeploy automatically.

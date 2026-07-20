@@ -449,3 +449,327 @@ footer{max-width:var(--max);margin:auto;padding:28px 24px 50px;border-top:1px so
   .principle-strip i{transform:rotate(90deg);margin-left:20px}
   .market-copy h2 span{font-size:.6em}
 }
+
+
+/* =========================================================
+   V4 — Sunrise hero, consistent metallic headings,
+   brighter imagery, premium force art and ecosystem network
+   ========================================================= */
+
+:root{
+  --metal-light:#f5f5f4;
+  --metal-mid:#b8b8b8;
+  --metal-dark:#5f5f62;
+}
+
+/* Consistent brushed aluminium heading language */
+.brand-heading,
+.hero h1,
+.section h2,
+.hunter-feature h2,
+.mission-panel h2,
+.future-panel h2,
+.market-copy h2,
+.ecosystem-section h2 {
+  font-family:"Barlow Condensed",sans-serif;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.012em;
+  line-height:.9;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,.13) 0 1px,
+      rgba(0,0,0,.08) 1px 3px
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #dadada 17%,
+      #f8f8f8 32%,
+      #9d9d9f 49%,
+      #ececec 66%,
+      #858589 83%,
+      #d7d7d8 100%
+    );
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  color:transparent;
+  filter:
+    drop-shadow(0 3px 0 rgba(0,0,0,.72))
+    drop-shadow(0 9px 12px rgba(0,0,0,.48));
+}
+
+.hero h1 span{
+  background:
+    repeating-linear-gradient(0deg,rgba(255,255,255,.14) 0 1px,rgba(0,0,0,.08) 1px 3px),
+    linear-gradient(180deg,#dcb9ff 0%,#a94cff 25%,#7221d8 54%,#bd70ff 80%,#681bc1 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 3px 0 rgba(23,2,39,.9)) drop-shadow(0 0 22px rgba(155,53,255,.32));
+}
+
+.brand-subheading,
+.concept-card h3,
+.phase h3,
+.eco-card h3,
+.sustainable-model h3,
+.force-label,
+.flow-node b {
+  font-family:"Barlow Condensed",sans-serif;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.025em;
+}
+
+/* Static sunrise hero — no separate animation or extra candle */
+.hero{
+  min-height:100svh;
+  background:#070608;
+}
+.hero-image{
+  background-image:url("assets/sunrise.webp") !important;
+  background-position:center 45% !important;
+  background-size:cover !important;
+  transform:none !important;
+  opacity:1;
+}
+.hero-vignette{
+  background:
+    linear-gradient(90deg,rgba(5,5,7,.72) 0%,rgba(5,5,7,.26) 48%,rgba(5,5,7,.06) 82%),
+    linear-gradient(0deg,rgba(5,5,7,.9) 0%,rgba(5,5,7,.1) 27%,transparent 62%) !important;
+}
+.citadel-charge,
+.hero-beam,
+.intro-running .hero-copy{
+  display:none !important;
+}
+.hero-copy{
+  opacity:1 !important;
+  transform:none !important;
+}
+
+/* Brighter images throughout */
+.hunter-portrait{
+  filter:saturate(1.12) contrast(1.05) brightness(1.08);
+}
+.mission-shade{
+  background:
+    linear-gradient(90deg,rgba(5,5,7,.64),rgba(5,5,7,.12),rgba(5,5,7,.54)),
+    linear-gradient(0deg,rgba(5,5,7,.86),transparent 21%,transparent 82%,rgba(5,5,7,.68)) !important;
+}
+.future-shade{
+  background:
+    linear-gradient(90deg,rgba(5,5,7,.78),rgba(5,5,7,.35) 50%,rgba(5,5,7,.08)),
+    linear-gradient(0deg,rgba(5,5,7,.82),transparent 24%,transparent 80%,rgba(5,5,7,.62)) !important;
+}
+.market-backdrop{
+  background:
+    linear-gradient(90deg,rgba(5,5,7,.78),rgba(5,5,7,.43) 54%,rgba(5,5,7,.15)),
+    url("assets/legion.webp") center/cover no-repeat !important;
+}
+.market-section:after{
+  background:linear-gradient(0deg,var(--bg),transparent 10%,transparent 92%,var(--bg)) !important;
+}
+
+/* Remove visible hard seams / black gaps */
+section,
+.market-section,
+.ecosystem-section,
+.future-panel,
+.mission-panel{
+  margin-top:-1px;
+  margin-bottom:-1px;
+}
+.market-section,
+.ecosystem-section,
+.blueprint-section,
+.future-panel{
+  overflow:hidden;
+}
+.ecosystem-section{
+  background:
+    radial-gradient(circle at 50% 43%,rgba(155,53,255,.075),transparent 29%),
+    linear-gradient(180deg,#050507 0%,#09060d 48%,#050507 100%) !important;
+}
+
+/* Premium Bull / Hunter / Bear illustrations */
+.market-forces{
+  grid-template-columns:1fr auto 1.15fr auto 1fr;
+  gap:16px;
+}
+.force-card{
+  min-height:310px !important;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 28%,rgba(255,255,255,.06),transparent 38%),
+    linear-gradient(180deg,rgba(14,10,21,.9),rgba(5,5,8,.94)) !important;
+}
+.force-card:after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:4px;
+  opacity:.9;
+}
+.bull-card:after{background:linear-gradient(90deg,transparent,var(--green),transparent)}
+.hunter-force:after{background:linear-gradient(90deg,transparent,var(--purple),var(--green),transparent)}
+.bear-card:after{background:linear-gradient(90deg,transparent,#ff4457,transparent)}
+.force-art{
+  height:170px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:-5px 0 8px;
+}
+.force-art svg{
+  width:100%;
+  max-width:240px;
+  height:165px;
+  overflow:visible;
+}
+.animal-silhouette{
+  stroke-width:2;
+  filter:drop-shadow(0 0 12px currentColor);
+}
+.bull-shape{
+  fill:url(#bullGlow);
+  color:var(--green);
+}
+.bear-shape{
+  fill:#ff4659;
+  color:#ff4659;
+  filter:drop-shadow(0 0 15px rgba(255,70,89,.5));
+}
+.hunter-helmet{
+  fill:#16131d;
+  stroke:#9b35ff;
+  stroke-width:3;
+  filter:drop-shadow(0 0 14px rgba(155,53,255,.6));
+}
+.visor{
+  fill:var(--green);
+  filter:drop-shadow(0 0 10px var(--green));
+}
+.force-line{
+  stroke:rgba(255,255,255,.16);
+  stroke-width:1;
+}
+.force-label{
+  font-size:43px;
+  display:block;
+  margin-top:-8px;
+}
+.force-label.green{color:var(--green)}
+.force-label.purple{color:#c267ff}
+.force-label.red{color:#ff5264}
+
+/* Full ticker */
+.token-mini{
+  width:auto;
+  font-size:20px !important;
+  letter-spacing:.02em;
+  white-space:nowrap;
+  color:var(--green);
+}
+
+/* Ecosystem connector animation flowing inward */
+.ecosystem-loop{
+  isolation:isolate;
+}
+.ecosystem-connectors{
+  position:absolute;
+  z-index:2;
+  inset:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+  overflow:visible;
+}
+.ecosystem-connectors .connector{
+  fill:none;
+  stroke:url(#connectorGradient);
+  stroke-width:3;
+  stroke-linecap:round;
+  stroke-dasharray:11 17;
+  filter:url(#connectorGlow);
+  animation:flowToCenter 2.8s linear infinite;
+  opacity:.82;
+}
+.ecosystem-connectors .c2{animation-delay:-.45s}
+.ecosystem-connectors .c3{animation-delay:-.9s}
+.ecosystem-connectors .c4{animation-delay:-1.35s}
+.ecosystem-connectors .c5{animation-delay:-1.8s}
+.ecosystem-connectors .c6{animation-delay:-2.25s}
+.center-pulse-ring{
+  fill:none;
+  stroke:var(--green);
+  stroke-width:2;
+  opacity:.18;
+  transform-origin:500px 425px;
+  animation:centerNetworkPulse 2.8s ease-out infinite;
+}
+.eco-center{
+  animation:centerGlow 2.8s ease-in-out infinite;
+}
+.eco-card{
+  backdrop-filter:blur(8px);
+}
+@keyframes flowToCenter{
+  to{stroke-dashoffset:-56}
+}
+@keyframes centerNetworkPulse{
+  0%{transform:scale(.78);opacity:.4}
+  70%,100%{transform:scale(1.18);opacity:0}
+}
+@keyframes centerGlow{
+  0%,100%{box-shadow:0 0 35px rgba(155,53,255,.22),inset 0 0 35px rgba(125,255,25,.06)}
+  50%{box-shadow:0 0 72px rgba(155,53,255,.42),0 0 30px rgba(125,255,25,.2),inset 0 0 50px rgba(125,255,25,.1)}
+}
+
+/* More refined branded icon cards */
+.brand-icon,
+.hex-icon{
+  background:
+    linear-gradient(145deg,rgba(155,53,255,.25),rgba(125,255,25,.08)),
+    #08070b;
+  filter:drop-shadow(0 8px 18px rgba(0,0,0,.45));
+}
+.brand-icon:after,
+.hex-icon:before{
+  content:"";
+  position:absolute;
+  inset:5px;
+  clip-path:inherit;
+  border:1px solid rgba(255,255,255,.08);
+}
+
+/* Mobile */
+@media(max-width:900px){
+  .hero{
+    min-height:900px;
+  }
+  .hero-image{
+    background-position:58% center !important;
+  }
+  .hero-vignette{
+    background:
+      linear-gradient(0deg,rgba(5,5,7,.92) 0%,rgba(5,5,7,.58) 45%,rgba(5,5,7,.08) 100%) !important;
+  }
+  .market-forces{
+    grid-template-columns:1fr;
+  }
+  .ecosystem-connectors{
+    display:none;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .ecosystem-connectors .connector,
+  .center-pulse-ring,
+  .eco-center{
+    animation:none !important;
+  }
+}
