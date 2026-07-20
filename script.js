@@ -52,3 +52,24 @@ if (glow && matchMedia('(pointer:fine)').matches) {
   });
 }
 
+
+
+document.querySelectorAll('[data-scroll-shell]').forEach(shell => {
+  const area = shell.querySelector('[data-scroll-area]');
+  if (!area) return;
+
+  const dismiss = () => {
+    if (area.scrollLeft > 8) {
+      shell.classList.add('has-scrolled');
+      area.removeEventListener('scroll', dismiss);
+    }
+  };
+
+  area.addEventListener('scroll', dismiss, { passive: true });
+  area.addEventListener('touchmove', () => shell.classList.add('has-scrolled'), { passive: true, once: true });
+  area.addEventListener('pointerdown', event => {
+    if (event.pointerType === 'touch' || event.pointerType === 'pen') {
+      shell.classList.add('has-scrolled');
+    }
+  }, { once: true });
+});
