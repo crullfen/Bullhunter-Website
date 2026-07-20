@@ -1527,3 +1527,50 @@ section,
   height:235px !important;
   background:radial-gradient(circle,#fff 0 2%,#7dff19 7%,#9b35ff 30%,rgba(155,53,255,.16) 52%,transparent 73%) !important;
 }
+
+/* =========================================================
+   V8 — Clean character imagery
+   ========================================================= */
+
+/* Bull and Bear: character-only crops, no embedded icons */
+.bull-photo{
+  background-image:
+    linear-gradient(0deg,rgba(4,4,7,.88) 0%,transparent 31%),
+    url("assets/bull-character-clean.webp") !important;
+  background-size:cover !important;
+  background-position:center 38% !important;
+}
+.bear-photo{
+  background-image:
+    linear-gradient(0deg,rgba(4,4,7,.88) 0%,transparent 31%),
+    url("assets/bear-character-clean.webp") !important;
+  background-size:cover !important;
+  background-position:center 38% !important;
+}
+
+/* Hunter: clean Brand Bible portrait, without candle or helmet symbol */
+.hunter-character-image{
+  background-image:
+    linear-gradient(0deg,rgba(4,4,7,.88) 0%,transparent 30%),
+    url("assets/hunter-character-clean.webp") !important;
+  background-position:center 16% !important;
+  background-size:cover !important;
+}
+.hunter-character-beam{
+  display:none !important;
+}
+
+/* Let each character fill the visual area more strongly */
+.character-stage{
+  height:475px !important;
+}
+.character-photo,
+.hunter-character-image{
+  filter:saturate(1.1) contrast(1.07) brightness(1.04) !important;
+}
+@media(max-width:980px){
+  .character-stage{height:500px !important}
+}
+@media(max-width:560px){
+  .character-stage{height:420px !important}
+}

@@ -1,11 +1,11 @@
-# BullHunter V7 — Corrected Character & Core Edition
+# BullHunter V8 — Clean Character Edition
 
-Corrections made:
-- BULLHUNTER and LEGION now both use the same aluminium treatment
-- Bull and Bear now use actual illustrated image assets, not icons
-- Hunter remains the official Brand Bible Hunter
-- Six separate ecosystem energy lines now run from all six nodes directly into the core
-- Each line has a visible arrow and animated energy flow
-- Node source ports and a stronger AI core have been added
+Corrections:
+- Removed the extra candle / vertical symbol from the Hunter helmet
+- Replaced the Hunter market image with a clean Brand Bible portrait
+- Removed the embedded green Bull icon from the Bull image
+- Removed the embedded red Bear icon from the Bear image
+- Bull, Hunter and Bear panels now contain only the character artwork
 
-Upload and replace all project files in GitHub. Vercel redeploys automatically.
+Upload and replace all files in the existing GitHub repository.
+Vercel will deploy the update automatically.
