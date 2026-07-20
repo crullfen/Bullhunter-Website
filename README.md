@@ -1,25 +1,23 @@
-# BullHunter Premium Onepager V4 — Sunrise Network
+# BullHunter Premium Onepager V5 — Command Center
 
-Main changes:
+This version converts the Hunter Market and Hunter Ecosystem into the approved futuristic command-center style.
 
-- Static sunrise hero using the approved citadel image
-- Removed the failed citadel loading animation and the separate extra candle
-- Consistent brushed-aluminium headline treatment across all major sections
-- Brighter imagery and lighter overlays
-- New illustrated Bull / Hunter / Bear cards
-- Full `$HUNTER` ticker in the ecosystem
-- Animated energy lines flowing from every ecosystem node into BullHunter at the center
-- Smoother section transitions with hard black seams removed
-- Existing mobile navigation, reveal effects and contract-copy button retained
+Highlights:
+- Large illustrated Bull, Hunter and Bear panels
+- Green / purple / red visual coding
+- Full Hunter Market explanation and five-step creation process
+- Central BullHunter ecosystem core
+- Six connected ecosystem nodes
+- Animated energy streams flowing into the core
+- Full `$HUNTER` ticker
+- Command-center panels, clipped corners and neon borders
+- Mobile fallback that turns the network into stacked cards
 
-## Upload
-
-Replace the following files in the root of the existing GitHub repository:
-
-- `index.html`
-- `styles.css`
-- `script.js`
-- `README.md`
-- `assets/`
+Upload and replace:
+- index.html
+- styles.css
+- script.js
+- README.md
+- assets/
 
 Vercel will redeploy automatically.
